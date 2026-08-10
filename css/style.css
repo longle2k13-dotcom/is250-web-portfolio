@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(235, 11, 235);
+    color: rgb(32, 73, 73);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    padding: 20px;
+    margin-bottom: 20px ;
+}
+
+main {
+    padding: 20px;
+}
+footer {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.container{
+    max-width: 960px;
+    margin:0 auto;
+}
+
+.project-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.project-card{
+    border: 3px,solid;
+    border-radius: 1%;
+    box-shadow: 5px 10px 10px;
+    padding: 20px;
+    flex: 1 1 250px;
+}
