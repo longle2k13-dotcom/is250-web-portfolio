@@ -22,7 +22,7 @@ footer {
     max-width: 960px;
     margin: 0 auto;
     grid-area: cs1;
-    
+
 }
 
 .project-gallery {
@@ -74,10 +74,53 @@ footer {
 
 aside {
     grid-area: aside;
-    
+
 }
 
 .no-aside .container {
-   
+
     grid-column: 1/3;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(88, 77, 182);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+}
+
+button:hover {
+    background-color: rgb(24, 39, 39);
+    transform: scale(1.05);
+
+}
+
+nav a {
+    color: rgb(124, 71, 39);
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    display: inline-block;
+
+}
+nav a:hover {
+    color:aliceblue;
+    transform: scale(1.05);
 }
