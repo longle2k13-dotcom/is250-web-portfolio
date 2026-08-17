@@ -1,36 +1,83 @@
 body {
-    background-color: rgb(235, 11, 235);
+    background-color: rgb(192, 180, 192);
     color: rgb(32, 73, 73);
     font-family: 'Times New Roman', Times, serif;
 }
 
 header {
     padding: 20px;
-    margin-bottom: 20px ;
+    margin-bottom: 20px;
 }
 
 main {
     padding: 20px;
 }
+
 footer {
     padding: 20px;
     margin-top: 20px;
 }
 
-.container{
+.container {
     max-width: 960px;
-    margin:0 auto;
+    margin: 0 auto;
+    grid-area: cs1;
+    
 }
 
-.project-gallery{
+.project-gallery {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
-.project-card{
-    border: 3px,solid;
+
+.project-card {
+    border: 3px solid #000;
     border-radius: 1%;
     box-shadow: 5px 10px 10px;
     padding: 20px;
     flex: 1 1 250px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    grid-template-areas:
+        "head "
+        "main "
+        "foot ";
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    border: solid;
+    grid-template-areas:
+        "cs1 aside";
+
+}
+
+header {
+    grid-area: head;
+}
+
+main {
+    grid-area: main;
+
+}
+
+footer {
+    grid-area: foot;
+}
+
+aside {
+    grid-area: aside;
+    
+}
+
+.no-aside .container {
+   
+    grid-column: 1/3;
 }
