@@ -38,6 +38,9 @@ footer {
     padding: 20px;
     flex: 1 1 250px;
 }
+.project-card img {
+    width: 100%;
+}
 
 .grid-container {
     display: grid;
@@ -107,7 +110,7 @@ button {
 }
 
 button:hover {
-    background-color: rgb(24, 39, 39);
+    background-color: rgb(77, 167, 167);
     transform: scale(1.05);
 
 }
@@ -124,3 +127,52 @@ nav a:hover {
     color:aliceblue;
     transform: scale(1.05);
 }
+/*--------------------------------------------------------------  */
+/* For project card 1 */
+.img-container{
+    position: relative;
+    overflow: hidden;
+    
+}
+.img-overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(58, 152, 165, 0.473);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: rgb(6, 214, 221);
+}
+.img-container:hover .img-overlay{
+    opacity: 1;
+}
+.img-container:hover img{
+    transform: scale(1.05);
+}
+.img-container img{
+    transition: transform 0.3s ease;
+}
+/* Project card 1 ends here */
+/*--------------------------------------------------------------  */
+/* For table */
+table{
+    width:100%;
+    border: 1px solid black;
+    border-collapse:collapse ;
+}
+table thead{
+    background-color: rgb(255, 230, 0);
+}
+td, th{
+    padding: 5px;
+    border: 1px solid black;
+}
+tbody tr:nth-child(even){
+    background-color: blanchedalmond;
+}
+/* Table ends here */
